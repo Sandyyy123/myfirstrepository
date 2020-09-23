@@ -1,1 +1,4 @@
 # myfirstrepository
+## directories
+## packages
+#### tidyverse
