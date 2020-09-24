@@ -60,7 +60,7 @@ clinical.fn <- sprintf("%s/all_studies.txt", data.dir)
 
 You can also embed plots, for example:
 
-```{r pressure, echo=TRUE}
+```{r tidyverse, echo=TRUE}
 plot(pressure)
 ```
 
