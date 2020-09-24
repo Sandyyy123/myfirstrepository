@@ -17,8 +17,43 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars, echo=FALSE}
-summary(cars)
+```{r packages, echo=FALSE}
+#library(myfirstpackage)
+library(tidyverse)
+# for general work
+library(data.table)
+# for reading file
+library(table1)
+# for table creation
+```
+
+
+
+```{r directories, echo=FALSE, warning = F}
+project.dir <-  "C:/Users/grover/OneDrive - bwstaff/myfirstrepository/myfirstrepository"
+data.dir <- sprintf("%s/data", project.dir)
+rawdata.dir <- sprintf("%s/rawdata", project.dir)
+code.dir <- sprintf("%s/code", project.dir)
+text.dir <- sprintf("%s/text", project.dir)
+figure.dir <- sprintf("%s/figure", project.dir)
+report.dir <-  sprintf("%s/report", project.dir)
+table.dir <-  sprintf("%s/table", project.dir)
+slides.dir <- sprintf("%s/slides", project.dir)
+setwd(project.dir)
+dir.create(data.dir)
+dir.create(rawdata.dir)
+dir.create(code.dir)
+dir.create(text.dir)
+dir.create(figure.dir)
+dir.create(report.dir)
+dir.create(table.dir)
+dir.create(slides.dir)
+##########
+clinical.fn <- sprintf("%s/all_studies.txt", data.dir)
+#if(!file.exists("all_studies.txt")){
+#dowload.file("dropbox/allstudies.txt", "all_studies.txt")
+#}
+# Manual download or copy to folder
 ```
 
 ## Including Plots
