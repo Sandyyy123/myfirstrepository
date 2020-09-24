@@ -32,7 +32,6 @@ library(table1)
 ```{r directories, echo=FALSE, warning = F}
 project.dir <-  "C:/Users/grover/OneDrive - bwstaff/myfirstrepository/myfirstrepository"
 data.dir <- sprintf("%s/data", project.dir)
-rawdata.dir <- sprintf("%s/rawdata", project.dir)
 code.dir <- sprintf("%s/code", project.dir)
 text.dir <- sprintf("%s/text", project.dir)
 figure.dir <- sprintf("%s/figure", project.dir)
@@ -41,7 +40,6 @@ table.dir <-  sprintf("%s/table", project.dir)
 slides.dir <- sprintf("%s/slides", project.dir)
 setwd(project.dir)
 dir.create(data.dir)
-dir.create(rawdata.dir)
 dir.create(code.dir)
 dir.create(text.dir)
 dir.create(figure.dir)
@@ -60,8 +58,8 @@ clinical.fn <- sprintf("%s/all_studies.txt", data.dir)
 
 You can also embed plots, for example:
 
-```{r tidyverse, echo=TRUE}
-plot(pressure)
+```{r load data, echo=TRUE}
+
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
