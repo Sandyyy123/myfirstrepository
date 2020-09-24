@@ -73,10 +73,10 @@ rawdata %>%  slice(40:50) %>%
   to_lower() %>%
   arrange(desc()) %>%
   count()
-
-
-
-
+  
+  # Go ahead and save this data in your package, name it as cleandata.
+  # cleandata()
+  # 
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
