@@ -3,8 +3,8 @@ title: "Myproject"
 author: "Sandeep Grover"
 date: "23/09/2020"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -13,11 +13,48 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Here is a link to [SLACK] (https://ikeabworkspace.slack.com/archives/C01BC64V1FC)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The objective of my **project** is to __compare__ group A vs. group B.
 
-```{r packages, echo=FALSE, warning = FALSE}
+This would enable us to *discover* new _treatments_.
+
+THe name of current project is `ClinicalABC`.
+
+
+
+```{r examples, echo=TRUE}
+2+2
+mean(c(1,2,3,4,5))
+
+
+```
+#########################################
+1. Introduction
+    a. Disease
+        i. Prevalence
+        ii. Causes
+        iii. Treatment
+    b. Objective
+        i. Markers
+2. Methods
+    a. Regression
+3. Results
+    a. Descriptive 
+    b. Main results
+    c. Secondary results
+########################################
+    
+> Parkinson's disease is one of the most 
+> common neurodegenerative diseases.
+>
+> 1. The disease is characterized by degeneration of
+> 2. The disease has an delayed age of onset
+>
+> > above 60
+
+#######################################
+```{r packages, warning=FALSE, include=FALSE}
 library(myfirstrepository)
 library(tidyverse)
 # for general work
@@ -58,7 +95,7 @@ clinical.fn <- sprintf("%s/all_studies.txt", data.dir)
 
 You can also embed plots, for example:
 
-```{r data cleaning, echo=TRUE}
+#```{r data cleaning, echo=FALSE}
 head(rawdata)
 rawdata %>%  slice(40:50) %>% 
   select(starts_with("age")) %>% 
@@ -69,7 +106,7 @@ rawdata %>%  slice(40:50) %>%
   merge()
   table1()
   write_csv()%>%
-  function() %>%
+  #function() %>%
   to_lower() %>%
   arrange(desc()) %>%
   count()
