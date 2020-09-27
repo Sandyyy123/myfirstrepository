@@ -3,16 +3,9 @@ title: "Myproject"
 author: "Sandeep Grover"
 date: "23/09/2020"
 output:
-  html_document: 
-    theme: cerulean
-    highlight: kate
-    css: myfirstcss.css
-    #fig_height: 5
-    #fig_width: 5
-    toc: yes
-    toc_float: true
-    code_folding: hide
-    keep_md: true
+  md_document: 
+     variant: markdown_github
+    
 ---
 
 
